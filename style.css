@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#icon {
+  width: 30px;
+  height: auto;
+}
+#icon-name {
+  width: 5px;
+  font-family: Chalkduster;
+}
+.home-nav {
+  color: goldenrod;
+}
+/* a:hover {
+  animation: moveInLeft 30s ease-out;
+} */
+.headerImg {
+  height: 70vh;
+  background-image: url(./img/woman-singing-in-black-dress.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translate(-0%, -0%);
+  text-align: center;
+}
+.header-primary {
+  color: rgb(189, 184, 184);
+  backface-visibility: hidden;
+}
+.spotify {
+  color: rgb(108, 172, 13);
+}
+
+.header-primary-main {
+  display: block;
+  font-weight: bold;
+  font-size: 55px;
+  font-family: Chalkduster, " Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+
+  animation: moveInLeft 3s ease-out;
+}
+
+.header-primary-sub {
+  color: rgba(217, 165, 32, 0.801);
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 4px;
+
+  margin-bottom: 40px;
+
+  animation: moveInRight 3s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(-1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.header-btn,
+.header-btn:link,
+.header-btn:visited {
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 50px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.1s;
+}
+.header-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0px 1px 4px rgba(2, 0, 94, 0.4);
+}
+.header-btn:hover {
+  color: black;
+  background-color: rgba(217, 165, 32, 0.801);
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.068);
+}
+
+.header-btn-white {
+  background-color: rgb(217, 165, 32);
+  color: rgba(250, 243, 243, 0.76);
+}
+/* .header-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-btn-white::after {
+  background-color: white;
+  color: rgba(5, 2, 2, 0.76);
+} */
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.header-btn-animate {
+  animation: moveInButton 0.9s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+/* ......BODY............ */
+
+.aboutMe {
+  height: 70vh;
+  background-color: rgba(196, 194, 194, 0.397);
+  background-size: cover;
+  background-position: top;
+}
+.felaImg {
+  position: absolute;
+  width: 397px;
+  height: 334px;
+  top: 0;
+  left: 942px;
+  top: 1997px;
+}
